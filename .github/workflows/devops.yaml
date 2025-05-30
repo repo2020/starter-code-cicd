@@ -2,7 +2,12 @@ name: DevOps
 on: [push]
 
 jobs:
-    test:
+    checkout:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Get Code
+              uses: actions/checkout@v4
+    deploy:
         runs-on: ubuntu-latest
         steps:
             - name: Get Code
