@@ -1,5 +1,5 @@
 name: DevOps
-on: [push]
+on: [push, workflow_dispatch]
 
 jobs:
     checkout:
