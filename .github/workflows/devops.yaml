@@ -17,7 +17,7 @@ jobs:
             - name: print node version
               run: node -v
             - name: Run Tests
-              run: npm run test              
+              run: npp run test              
     deploy:
         needs: checkout
         runs-on: ubuntu-latest
